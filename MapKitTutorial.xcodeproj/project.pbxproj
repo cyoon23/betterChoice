@@ -11,7 +11,7 @@
 		2715574221739CA600AB0F01 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2715574121739CA600AB0F01 /* SecondViewController.swift */; };
 		271557472173A6F400AB0F01 /* Screen Shot 2018-10-14 at 10.32.55 AM.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 271557452173A6F400AB0F01 /* Screen Shot 2018-10-14 at 10.32.55 AM.jpeg */; };
 		271557482173A6F400AB0F01 /* Screen Shot 2018-10-14 at 10.33.36 AM.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 271557462173A6F400AB0F01 /* Screen Shot 2018-10-14 at 10.33.36 AM.jpeg */; };
-		2715574A2173B29C00AB0F01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271557492173B29C00AB0F01 /* Main.storyboard */; };
+		2715574E2173BB4300AB0F01 /* Screen Shot 2018-10-14 at 10.19.01 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 2715574D2173BB4300AB0F01 /* Screen Shot 2018-10-14 at 10.19.01 AM.png */; };
 		274220E12173836F00119DDD /* icon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 274220E02173836F00119DDD /* icon.jpeg */; };
 		274220E32173886600119DDD /* iconf.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 274220E22173886500119DDD /* iconf.jpeg */; };
 		274220E5217389F000119DDD /* GKBPROFILE.png in Resources */ = {isa = PBXBuildFile; fileRef = 274220E4217389F000119DDD /* GKBPROFILE.png */; };
@@ -50,7 +50,7 @@
 		2715574121739CA600AB0F01 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		271557452173A6F400AB0F01 /* Screen Shot 2018-10-14 at 10.32.55 AM.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Screen Shot 2018-10-14 at 10.32.55 AM.jpeg"; sourceTree = "<group>"; };
 		271557462173A6F400AB0F01 /* Screen Shot 2018-10-14 at 10.33.36 AM.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Screen Shot 2018-10-14 at 10.33.36 AM.jpeg"; sourceTree = "<group>"; };
-		271557492173B29C00AB0F01 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../../../../../../../../var/folders/nf/2tccz6fs6vs_v709w7g_5gzm0000gn/T/com.apple.iChat/Messages/Transfers/Main.storyboard; sourceTree = "<group>"; };
+		2715574D2173BB4300AB0F01 /* Screen Shot 2018-10-14 at 10.19.01 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-10-14 at 10.19.01 AM.png"; sourceTree = "<group>"; };
 		274220E02173836F00119DDD /* icon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpeg; sourceTree = SOURCE_ROOT; };
 		274220E22173886500119DDD /* iconf.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iconf.jpeg; sourceTree = SOURCE_ROOT; };
 		274220E4217389F000119DDD /* GKBPROFILE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GKBPROFILE.png; sourceTree = SOURCE_ROOT; };
@@ -142,7 +142,6 @@
 				FC1E247F1C2B10F5009E9908 /* temp.storyboard */,
 				277C04F12173560D00034BBD /* settings.storyboard */,
 				FC1E24841C2B10F5009E9908 /* LaunchScreen.storyboard */,
-				271557492173B29C00AB0F01 /* Main.storyboard */,
 				FC1E247B1C2B10F5009E9908 /* AppDelegate.swift */,
 				FC1E247D1C2B10F5009E9908 /* ViewController.swift */,
 				FCC472801C31DAD600E8FEEC /* LocationSearchTable.swift */,
@@ -158,6 +157,7 @@
 				277C0506217377DB00034BBD /* Screen Shot 2018-10-13 at 4.06.09 PM 2.png */,
 				271557462173A6F400AB0F01 /* Screen Shot 2018-10-14 at 10.33.36 AM.jpeg */,
 				277C050421736C5000034BBD /* gkb.png */,
+				2715574D2173BB4300AB0F01 /* Screen Shot 2018-10-14 at 10.19.01 AM.png */,
 				277C04FA2173609500034BBD /* GenEd.png */,
 				277C04F82173609500034BBD /* Home.png */,
 				274220E02173836F00119DDD /* icon.jpeg */,
@@ -242,7 +242,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				274220ED21738E3F00119DDD /* login-pageUITests in Resources */,
-				2715574A2173B29C00AB0F01 /* Main.storyboard in Resources */,
 				277C050D21737B9900034BBD /* betterchoic.jpeg in Resources */,
 				277C05002173609500034BBD /* Quizzes.png in Resources */,
 				277C04F32173560D00034BBD /* settings.storyboard in Resources */,
@@ -253,6 +252,7 @@
 				274220EF21738E3F00119DDD /* login-page in Resources */,
 				277C04FD2173609500034BBD /* Home.png in Resources */,
 				277C04FF2173609500034BBD /* GenEd.png in Resources */,
+				2715574E2173BB4300AB0F01 /* Screen Shot 2018-10-14 at 10.19.01 AM.png in Resources */,
 				FC1E24861C2B10F5009E9908 /* LaunchScreen.storyboard in Resources */,
 				277C05012173609500034BBD /* Settings.png in Resources */,
 				FC1E24831C2B10F5009E9908 /* Assets.xcassets in Resources */,

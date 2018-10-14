@@ -95,7 +95,7 @@ extension ViewController: HandleMapSearch {
         }
         
         mapView.addAnnotation(annotation)
-        let span = MKCoordinateSpanMake(15, 15)
+        let span = MKCoordinateSpanMake(0.05, 0.05)
         let region = MKCoordinateRegionMake(placemark.coordinate, span)
         mapView.setRegion(region, animated: true)
     }
@@ -105,22 +105,6 @@ extension ViewController: HandleMapSearch {
 extension ViewController : MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?{
-        
-        if(annotation is MKUserLocation) {
-            let reuseID = "pin"
-            var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseID) as? MKPinAnnotationView
-            if(pinView == nil) {
-                pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseID)
-                pinView!.canShowCallout = true
-                pinView!.animatesDrop = true
-            }
-            let button = UIButton()
-            button.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-            let image = UIImage(named: "gkb.png")
-            button.setImage(image, for: .normal)
-            pinView?.rightCalloutAccessoryView = button
-            return pinView
-        } 
         
         guard !(annotation is MKUserLocation) else { return nil }
         
@@ -138,5 +122,4 @@ extension ViewController : MKMapViewDelegate {
         
         return pinView
     }
-    
 }
