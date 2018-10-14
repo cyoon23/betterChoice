@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dD5-Dd-GK2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Apc-Qo-nap">
+            <objects>
+                <navigationController id="dD5-Dd-GK2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0aK-JS-KX2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Dwe-bX-nbx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KaM-Hg-qzs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-716" y="134"/>
+        </scene>
+        <!--Terms to Know:-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="genEd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="idL-Yl-e6b">
+                                <rect key="frame" x="0.0" y="64" width="375" height="312"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94069863882018412" green="0.94159538657574582" blue="0.94807860363332719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Term of the Day:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CwN-W1-p4F">
+                                <rect key="frame" x="16" y="76" width="343" height="245"/>
+                                <color key="backgroundColor" red="0.82323777914050678" green="1" blue="0.87911407282631249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Judicial Branch" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4s0-iy-aXI">
+                                <rect key="frame" x="94" y="108" width="186" height="51"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Noun" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rjG-NY-RQY">
+                                <rect key="frame" x="176" y="137" width="43" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gTS-3M-CeI">
+                                <rect key="frame" x="67" y="167" width="240" height="143"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">The court systems of local, state, and federal governments, responsible for interpreting the laws passed by the legislative branch and enforced by the executive branch</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Other Terms to Know:" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ij-TK-Las">
+                                <rect key="frame" x="101" y="329" width="173" height="30"/>
+                                <color key="backgroundColor" red="0.82323777909999996" green="1" blue="0.87911407279999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="WoU-kl-iNn">
+                                <rect key="frame" x="-20" y="368" width="413" height="95"/>
+                                <color key="backgroundColor" red="0.94627292770832838" green="0.86059795633051228" blue="0.94807860363332719" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="qYk-N1-t90">
+                                <rect key="frame" x="-17" y="459" width="401" height="214"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvj-EW-M5S">
+                                <rect key="frame" x="0.0" y="368" width="90" height="89"/>
+                                <connections>
+                                    <segue destination="kSi-bb-tk4" kind="show" id="gE7-fV-TNe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0m-KU-5Pm">
+                                <rect key="frame" x="111" y="368" width="148" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="KSe-gA-3TO" kind="show" id="Q8T-VR-AO6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2j2-op-AiZ">
+                                <rect key="frame" x="280" y="459" width="95" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="zFY-sX-QoT" kind="show" id="1s4-IC-awX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlf-6a-gPD">
+                                <rect key="frame" x="115" y="459" width="127" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="ALm-ZU-r92" kind="show" id="kry-tT-HrR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Oo-j7-jyi">
+                                <rect key="frame" x="0.0" y="463" width="107" height="99"/>
+                                <connections>
+                                    <segue destination="sUb-mw-DiY" kind="show" id="FMy-iP-hmc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsN-Aq-SKM">
+                                <rect key="frame" x="0.0" y="562" width="107" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="EEg-pF-o7u" kind="show" id="HVu-U5-4aU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uM-Pc-bgu">
+                                <rect key="frame" x="111" y="562" width="131" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="7nR-0t-opa" kind="show" id="BTu-9X-jAZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmT-8y-1nM">
+                                <rect key="frame" x="273" y="562" width="102" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="2Tu-M1-NL2" kind="show" id="5qo-4v-aW1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVk-PY-4eV">
+                                <rect key="frame" x="280" y="368" width="95" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="GXP-EM-6Jv" kind="show" id="6zN-Hy-xGN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4s0-iy-aXI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="05E-NY-QqJ"/>
+                            <constraint firstItem="CwN-W1-p4F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2p4-lk-MZj"/>
+                            <constraint firstItem="qYk-N1-t90" firstAttribute="top" secondItem="qvj-EW-M5S" secondAttribute="bottom" constant="2" id="3xI-Qg-X37"/>
+                            <constraint firstItem="rjG-NY-RQY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="176" id="6VG-Yu-zd2"/>
+                            <constraint firstItem="gTS-3M-CeI" firstAttribute="top" secondItem="4s0-iy-aXI" secondAttribute="bottom" constant="8" id="Ekw-Io-4a5"/>
+                            <constraint firstAttribute="trailing" secondItem="WoU-kl-iNn" secondAttribute="trailing" constant="-18" id="Ojl-p5-FjP"/>
+                            <constraint firstItem="WoU-kl-iNn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-20" id="Qc2-sj-Owf"/>
+                            <constraint firstItem="WoU-kl-iNn" firstAttribute="top" secondItem="5ij-TK-Las" secondAttribute="bottom" constant="9" id="RVy-DF-C4k"/>
+                            <constraint firstAttribute="bottom" secondItem="qYk-N1-t90" secondAttribute="bottom" constant="-6" id="UBb-7m-Wi5"/>
+                            <constraint firstAttribute="trailing" secondItem="qYk-N1-t90" secondAttribute="trailing" constant="-9" id="fkF-Eo-OZP"/>
+                            <constraint firstItem="qYk-N1-t90" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-17" id="gyS-Jx-fk8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rjG-NY-RQY" secondAttribute="trailing" constant="156" id="jHe-5b-9ZC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4s0-iy-aXI" secondAttribute="trailing" constant="95" id="k0v-dx-8X5"/>
+                            <constraint firstItem="8Oo-j7-jyi" firstAttribute="top" secondItem="WoU-kl-iNn" secondAttribute="bottom" id="o8Z-8y-iU0"/>
+                            <constraint firstItem="5ij-TK-Las" firstAttribute="top" secondItem="CwN-W1-p4F" secondAttribute="bottom" constant="8" id="otj-Iq-Wf2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CwN-W1-p4F" secondAttribute="trailing" constant="16" id="w8x-6r-2wY"/>
+                            <constraint firstItem="gTS-3M-CeI" firstAttribute="top" secondItem="rjG-NY-RQY" secondAttribute="bottom" constant="8" id="zh1-AM-TMt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Terms to Know:" id="xb0-ea-J8g"/>
+                    <connections>
+                        <segue destination="kSi-bb-tk4" kind="show" id="xVQ-VZ-g7t"/>
+                        <segue destination="sUb-mw-DiY" kind="show" id="gfu-Kq-s9x"/>
+                        <segue destination="EEg-pF-o7u" kind="show" id="JFw-eh-JYm"/>
+                        <segue destination="KSe-gA-3TO" kind="show" id="5oF-b1-HeG"/>
+                        <segue destination="ALm-ZU-r92" kind="show" id="fil-5F-LQg"/>
+                        <segue destination="7nR-0t-opa" kind="show" id="rn4-a1-wVc"/>
+                        <segue destination="GXP-EM-6Jv" kind="show" id="Fdw-Hz-igh"/>
+                        <segue destination="zFY-sX-QoT" kind="show" id="HRl-qZ-4Ql"/>
+                        <segue destination="2Tu-M1-NL2" kind="show" id="gWE-ac-Lqf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qx8-mO-ScP">
+            <objects>
+                <viewController id="7nR-0t-opa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HUq-nn-yhD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Republican" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OF-8f-6b4">
+                                <rect key="frame" x="75" y="123" width="224" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wbM-aQ-PbB">
+                                <rect key="frame" x="37" y="188" width="300" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">The Republican Party is one of the two major political parties in the United States, the other being its historic rival, the Democratic Party.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Seats in the Senate: 51/100                       Seats in the House of Representatives: 237/435" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wZP-Fh-Xqf">
+                                <rect key="frame" x="37" y="430" width="300" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6x2-zp-Ars">
+                                <rect key="frame" x="37" y="307" width="300" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Characteristics: conservative, right-leaning, pro individual rights, increase government spending, pro flat tax, pro private/free market</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82323777909999996" green="1" blue="0.87911407279999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6sD-3B-NOp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mr8-NV-7tg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="184.80000000000001" y="2623.5382308845578"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="C1z-Nv-eYY">
+            <objects>
+                <viewController id="EEg-pF-o7u" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mt1-9v-85y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8m-Ty-fG0">
+                                <rect key="frame" x="88" y="142" width="198" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dst-l2-xdK">
+                                <rect key="frame" x="37" y="207" width="300" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">The elected group of people in the US who are responsible for making the law, consisting of the Senate and the House of Representatives</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82323777909999996" green="1" blue="0.87911407279999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h8m-Ty-fG0" firstAttribute="top" secondItem="4cX-Js-6lD" secondAttribute="top" constant="78" id="bJM-3f-pX4"/>
+                            <constraint firstItem="h8m-Ty-fG0" firstAttribute="leading" secondItem="4cX-Js-6lD" secondAttribute="leading" constant="88" id="qyW-lr-TS3"/>
+                            <constraint firstItem="4cX-Js-6lD" firstAttribute="trailing" secondItem="h8m-Ty-fG0" secondAttribute="trailing" constant="89" id="zVw-sJ-t7t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4cX-Js-6lD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4E-ft-0gk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-716" y="2469.7151424287858"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="coz-yk-TOt">
+            <objects>
+                <viewController id="sUb-mw-DiY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WIV-xK-JEk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="The highest political position in the United States and some other countries, usually the leader of the government" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OG5-e0-vgD">
+                                <rect key="frame" x="37" y="194" width="300" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="President" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROh-2b-agL">
+                                <rect key="frame" x="93" y="129" width="189" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82323777909999996" green="1" blue="0.87911407279999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ziA-0a-PZQ" firstAttribute="trailing" secondItem="ROh-2b-agL" secondAttribute="trailing" constant="93" id="Jnu-z7-F6Y"/>
+                            <constraint firstItem="ROh-2b-agL" firstAttribute="leading" secondItem="ziA-0a-PZQ" secondAttribute="leading" constant="93" id="Lfe-Ic-Yet"/>
+                            <constraint firstItem="ROh-2b-agL" firstAttribute="top" secondItem="ziA-0a-PZQ" secondAttribute="top" constant="65" id="wc1-ZP-CbG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ziA-0a-PZQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="thV-hD-QdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-783.20000000000005" y="1654.7226386806599"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Dad-MZ-Zu6">
+            <objects>
+                <viewController id="2Tu-M1-NL2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PGW-Do-P7C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Democrat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8F-9z-LcF">
+                                <rect key="frame" x="89" y="130" width="197" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="H6L-Cg-ylR">
+                                <rect key="frame" x="37" y="195" width="300" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">The Democratic Party is one of the two major contemporary political parties in the United States, along with the Republican Party.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YGM-tm-9uQ">
+                                <rect key="frame" x="37" y="323" width="300" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Characteristics: liberal, left-leaning, pro communal and social responsibility, progressive taxation, pro government economic regulation, support universal healthcare</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Seats in the Senate: 47/100                       Seats in the House of Representatives: 197/435" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fEl-eb-AY6">
+                                <rect key="frame" x="37" y="489" width="300" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82323777909999996" green="1" blue="0.87911407279999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="70Z-1l-aa0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2s6-N7-FHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925.60000000000002" y="2045.1274362818592"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FBx-sp-IHq">
+            <objects>
+                <viewController id="ALm-ZU-r92" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qMy-mD-XLn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grand Jury" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQB-ok-hbX">
+                                <rect key="frame" x="77" y="129" width="221" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rgd-fO-UCI">
+                                <rect key="frame" x="37" y="194" width="300" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">A group of people who decide whether a person who has been accused of a crime should be given a trial in court or should be released</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82323777909999996" green="1" blue="0.87911407279999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="46Z-Od-iw9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="okA-q8-lQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="1654.7226386806599"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XEI-ne-geX">
+            <objects>
+                <viewController id="KSe-gA-3TO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g6s-Wy-Hzz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U.S. Constitution" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLH-7F-C8R">
+                                <rect key="frame" x="18" y="115" width="338" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="The Constitution of the United States is a document that establishes the basic rules and laws of the American government" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="e2o-qd-e4o">
+                                <rect key="frame" x="37" y="180" width="300" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82323777909999996" green="1" blue="0.87911407279999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cLH-7F-C8R" firstAttribute="leading" secondItem="vMM-Sl-7go" secondAttribute="leading" constant="18" id="6WW-m3-TK7"/>
+                            <constraint firstItem="vMM-Sl-7go" firstAttribute="trailing" secondItem="cLH-7F-C8R" secondAttribute="trailing" constant="19" id="7EN-Fr-2DJ"/>
+                            <constraint firstItem="cLH-7F-C8R" firstAttribute="top" secondItem="vMM-Sl-7go" secondAttribute="top" constant="51" id="sYe-kc-E12"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vMM-Sl-7go"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RfV-La-5Zh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109.59999999999999" y="891.90404797601207"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="grq-9s-Wvh">
+            <objects>
+                <viewController id="zFY-sX-QoT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MsL-ou-UGl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YeM-rV-k9D">
+                                <rect key="frame" x="49" y="200" width="300" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">An estimate, often itemized, of expected income and expense for a given period in the future; a plan of operations based on such an estimate; an itemized allotment of funds, time, etc., for a given period</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Budget" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjh-pe-php">
+                                <rect key="frame" x="114" y="125" width="146" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82323777909999996" green="1" blue="0.87911407279999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Uyg-JM-6OB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CJa-aC-t9p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925.60000000000002" y="1161.7691154422789"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hua-lw-Q3u">
+            <objects>
+                <viewController id="GXP-EM-6Jv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wgx-jh-7ki">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Census" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfi-Ju-wnw">
+                                <rect key="frame" x="111" y="131" width="152" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="An official enumeration of the population, with details as to age, sex, occupation, etc" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ocS-Vf-XMB">
+                                <rect key="frame" x="67" y="196" width="240" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82323777909999996" green="1" blue="0.87911407279999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="qVL-YW-47O"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEV-5d-i8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1133.5999999999999" y="303.59820089955025"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sA3-Ba-Gau">
+            <objects>
+                <viewController id="kSi-bb-tk4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JHQ-vV-cIB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="305-Zh-Cls">
+                                <rect key="frame" x="37" y="185" width="300" height="123"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">An assembly or council of citizens having the highest deliberative functions in a government, especially a legislative assembly of a state or nation</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekb-og-4lf">
+                                <rect key="frame" x="117" y="120" width="140" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82323777909999996" green="1" blue="0.87911407279999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="305-Zh-Cls" firstAttribute="top" secondItem="ekb-og-4lf" secondAttribute="bottom" constant="25" id="0cN-oG-t0S"/>
+                            <constraint firstItem="Kgo-DH-I94" firstAttribute="trailing" secondItem="305-Zh-Cls" secondAttribute="trailing" constant="38" id="3H8-EP-1Z8"/>
+                            <constraint firstItem="Kgo-DH-I94" firstAttribute="trailing" secondItem="ekb-og-4lf" secondAttribute="trailing" constant="118" id="R8e-nu-0ON"/>
+                            <constraint firstItem="ekb-og-4lf" firstAttribute="top" secondItem="Kgo-DH-I94" secondAttribute="top" constant="56" id="fbc-Wi-9Dy"/>
+                            <constraint firstItem="305-Zh-Cls" firstAttribute="leading" secondItem="Kgo-DH-I94" secondAttribute="leading" constant="37" id="kpB-mc-jIg"/>
+                            <constraint firstItem="ekb-og-4lf" firstAttribute="leading" secondItem="Kgo-DH-I94" secondAttribute="leading" constant="117" id="v16-cl-FPf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kgo-DH-I94"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qm7-WJ-sLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="834.33283358320841"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="284" height="69"/>
+        <image name="Image-1" width="277" height="151"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gE7-fV-TNe"/>
+        <segue reference="Fdw-Hz-igh"/>
+        <segue reference="1s4-IC-awX"/>
+        <segue reference="Q8T-VR-AO6"/>
+        <segue reference="fil-5F-LQg"/>
+        <segue reference="gWE-ac-Lqf"/>
+        <segue reference="gfu-Kq-s9x"/>
+        <segue reference="HVu-U5-4aU"/>
+        <segue reference="BTu-9X-jAZ"/>
+    </inferredMetricsTieBreakers>
+</document>
